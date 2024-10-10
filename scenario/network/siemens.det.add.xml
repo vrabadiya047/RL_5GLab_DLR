@@ -1,0 +1,74 @@
+<additional>
+
+    <!-- from the north -->
+    <laneAreaDetector id="lD11"   lane="-786367651_1" pos="-4.5"  length="4" freq="60" file="NUL"/> 
+    <laneAreaDetector id="lD11a"  lane="-786367651_2" pos="-4.5"  length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lVD11"  lane="-786367651_1" pos="-18.0" length="4" freq="60" file="NUL"/> 
+    <laneAreaDetector id="lVD11a" lane="-786367651_2" pos="-18.0" length="4" freq="60" file="NUL"/>
+
+    <!-- from the east -->
+    <laneAreaDetector id="lD21"   lane="51812134_1"   pos="-4.5"  length="4" freq="60" file="NUL"/>
+
+    <!-- from the south -->
+    <laneAreaDetector id="lD31"   lane="51932979_1"   pos="-4.5"  length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lD31a"  lane="51932979_2"   pos="-4.5"  length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lD31b"  lane="51932979_3"   pos="-4.5"  length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lVD31"  lane="51932979_1"   pos="-17.0" length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lVD31a" lane="51932979_2"   pos="-17.0" length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lVD31b" lane="51932979_3"   pos="-17.0" length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lD32"   lane="51811895a_0"  pos="8.0"  length="4" freq="60" file="NUL"/> 
+
+    <!-- from the west -->
+    <laneAreaDetector id="lD41"   lane="-51812052_1"  pos="-4.5"  length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lD42"   lane="-51812052_2"  pos="-4.5"  length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lVD41"  lane="-51812052_1"  pos="-24.5" length="4" freq="60" file="NUL"/>
+    <laneAreaDetector id="lVD42"  lane="-51812052_2"  pos="-24.5" length="4" freq="60" file="NUL"/>
+
+    <!-- original induction loops -->
+
+    <!-- from the north -->
+    <inductionLoop id="D11"   lane="-786367651_1" pos="-2.5"  freq="60" file="NUL"/> 
+    <inductionLoop id="D11a"  lane="-786367651_2" pos="-2.5"  freq="60" file="NUL"/>
+    <inductionLoop id="VD11"  lane="-786367651_1" pos="-16.0" freq="60" file="NUL"/> 
+    <inductionLoop id="VD11a" lane="-786367651_2" pos="-16.0" freq="60" file="NUL"/>
+
+    <!-- from the east -->
+    <inductionLoop id="D21"   lane="51812134_1"   pos="-2.5"  freq="60" file="NUL"/>
+
+    <!-- from the south -->
+    <inductionLoop id="D31"   lane="51932979_1"   pos="-2.5"  freq="60" file="NUL"/>
+    <inductionLoop id="D31a"  lane="51932979_2"   pos="-2.5"  freq="60" file="NUL"/>
+    <inductionLoop id="D31b"  lane="51932979_3"   pos="-2.5"  freq="60" file="NUL"/>
+    <inductionLoop id="VD31"  lane="51932979_1"   pos="-15.0" freq="60" file="NUL"/>
+    <inductionLoop id="VD31a" lane="51932979_2"   pos="-15.0" freq="60" file="NUL"/>
+    <inductionLoop id="VD31b" lane="51932979_3"   pos="-15.0" freq="60" file="NUL"/>
+    <inductionLoop id="D32"   lane="51811895a_0"  pos="10.0"  freq="60" file="NUL"/> 
+    <laneAreaDetector id="D32_long" lane="51811895a_0" pos="0" length="10" freq="60" file="NUL"/> 
+
+    <!-- from the west -->
+    <inductionLoop id="D41"   lane="-51812052_1"  pos="-2.5"  freq="60" file="NUL"/>
+    <inductionLoop id="D42"   lane="-51812052_2"  pos="-2.5"  freq="60" file="NUL"/>
+    <inductionLoop id="VD41"  lane="-51812052_1"  pos="-22.5" freq="60" file="NUL"/>
+    <inductionLoop id="VD42"  lane="-51812052_2"  pos="-22.5" freq="60" file="NUL"/>
+
+
+
+    <!-- additional detectors installed by the DLR -->
+
+    <!--
+    <inductionLoop id="N1C_0_in" lane="N1C_0" pos="-100" freq="60" file="NUL"/>
+    <inductionLoop id="N1C_0_out" lane="N1C_0" pos="-3" freq="60" file="NUL"/>
+
+    <inductionLoop id="N1C_1_in" lane="N1C_1" pos="-100" freq="60" file="NUL"/>
+    <inductionLoop id="N1C_1_out" lane="N1C_1" pos="-3" freq="60" file="NUL"/>
+
+    <inductionLoop id="S0C_0_in" lane="S0C_0" pos="-100" freq="60" file="NUL"/>
+    <inductionLoop id="S0C_0_out" lane="S0C_0" pos="-3" freq="60" file="NUL"/>
+
+    <inductionLoop id="E0E1_0_in" lane="E0E1_0" pos="-66" freq="60" file="NUL"/>
+    <inductionLoop id="E1C_1_in"  lane="E1C_1" pos="1" freq="60" file="NUL"/>
+    <inductionLoop id="E1C_0_out" lane="E1C_0" pos="-3" freq="60" file="NUL"/>
+    <inductionLoop id="E1C_1_out" lane="E1C_1" pos="-3" freq="60" file="NUL"/>
+    -->
+
+</additional>

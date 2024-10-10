@@ -1,0 +1,20 @@
+<tlLogics>
+
+    <tlLogic id="K048" type="static" programID="1" offset="0">
+
+        <!-- copied from network/tostmannplatz_ped.tll.xml -->
+        <phase duration="30" state="grrrgGGGGGgGGGGgrrGrrG"/> <!--  0    phase 1 (NS straight)                    default-stretch -->                  
+        <phase duration="3"  state="grrrGGGGGGyyyGGgrrrrrr"/> <!--  1       transition 1-2 a                                      -->
+        <phase duration="5"  state="grrrGGGGGGrrrGGgrrrrrr"/> <!--  2       transition 1-2 b                                      -->
+        <phase duration="2"  state="grrrGGGGGGrrrGGGrrrrrr"/> <!--  3    phase 2 a (NW left-movers)                   stretchable -->              
+        <phase duration="3"  state="grrryyyyGGrrrGGGrrrrrr"/> <!--  4    phase 2 b (NW left-movers, SN yellow)                    -->
+        <phase duration="5"  state="grrrrrrrGGrrryygrrrrrr"/> <!--  5    phase 3                                                  -->
+        <phase duration="7"  state="gGGGrrrrGGrrrrrgrrrrrr"/> <!--  6    phase 4 (E)                                  stretchable -->
+        <phase duration="3"  state="gyyyrrrrGGrrrrrgrrrrGr"/> <!--  7       transition 4-5 a                                      -->
+        <phase duration="6"  state="grrrrrrryyrrrrrgrrrrGr"/> <!--  8       transition 4-5 b                                      -->
+        <phase duration="8"  state="GrrrrrrrrrrrrrrgGrrGrr"/> <!--  9    phase 5 (WS)                                             -->
+        <phase duration="8"  state="GrrrrrrrrrrrrGGgGGrrrr"/> <!-- 10    phase 6 (WN)                                 stretchable -->
+        <phase duration="3"  state="GrrrrrrrrrrrrGGgyyrrrr"/> <!-- 11       transition 6-1 a                                      -->
+        <phase duration="2"  state="GrrrrrrrrrrrrGGgrrrrrr"/> <!-- 12       transition 6-1 b                                      -->
+   </tlLogic>
+</tlLogics>

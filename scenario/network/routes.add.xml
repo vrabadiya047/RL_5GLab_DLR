@@ -1,0 +1,63 @@
+<routes>
+    <route id="EN" edges="51812135 51812134 51811895b 786367652 586484843 554747354" />
+    <route id="ES" edges="51812135 51812134 -51932979 -51812159" />
+    <route id="EW" edges="51812135 51812134 51811895a 51812052 51812053 51812054" />
+
+    <route id="WN" edges="-51812054 -51812053 -51812052 786367652 586484843 554747354" />
+    <route id="WS" edges="-51812054 -51812053 -51812052 -51811895a -51811895b -51932979 -51812159"/>
+    <route id="WE" edges="-51812054 -51812053 -51812052 -51811895a -51811895c -51812134 -51812135"/>
+                                             
+    <route id="SN" edges="51812159 51812159.-60 51932979 51811895b 786367652 586484843 554747354" />
+    <route id="SW" edges="51812159 51812159.-60 51932979 51811895a 51812052 51812053 51812054" />
+    <route id="SE" edges="51812159 51812159.-60 51932979 -51812134 -51812135" />
+
+    <route id="NS" edges="-554747345 -786367651 -51811895a -51811895b -51932979 -51812159"/>
+    <route id="NW" edges="-554747345 -786367651 51812052 51812053 51812054"/>
+    <route id="NE" edges="-554747345 -786367651 -51811895a -51811895c -51812134 -51812135"/>
+
+    <routeDistribution id="random">
+        <route refId="EN" probability="20"/>
+        <route refId="ES" probability="20"/>
+        <route refId="EW" probability="20"/>
+
+        <route refId="WN" probability="40"/>
+        <route refId="WS" probability="40"/>
+        <route refId="WE" probability="40"/>
+
+        <route refId="SW" probability="40"/>
+        <route refId="SN" probability="100"/>
+        <route refId="SE" probability="20"/>
+
+        <route refId="NW" probability="40"/>
+        <route refId="NS" probability="100"/>
+        <route refId="NE" probability="20"/>
+    </routeDistribution>
+
+
+    <!-- routes starting at the detector edge -->
+    <!-- east -->
+    <route id="rD21" edges="51812134 51811895b 786367652 586484843 554747354" />
+    <!-- traffic in east-south and east-west direction is ignored -->
+
+    <!-- west -->
+    <!-- assume traffic to the south on early approach -->
+    <route id="rW41" edges="-51812053 -51812052 -51811895a -51811895b -51932979 -51812159"/>
+    <route id="rW42" edges="-51812053 -51812052 -51811895a -51811895b -51932979 -51812159"/>
+    <route id="rW43" edges="-51812052 -51811895a -51811895b -51932979 -51812159"/>
+    <route id="rW44" edges="-51812052 786367652 586484843 554747354" />
+
+    <!-- north -->
+    <routeDistribution id="rW11">
+        <route id="rW11_west"  probability="0.5" edges="-554747345 -786367651 51812052 51812053 51812054"/>
+        <route id="rW11_south" probability="0.5" edges="-554747345 -786367651 -51811895a -51811895b -51932979 -51812159"/>
+    </routeDistribution>
+    <route id="rW12" edges="-554747345 -786367651 -51811895a -51811895b -51932979 -51812159"/>
+
+    <!-- south -->
+    <route id="rW31" edges="51812159.-60 51932979 51811895b 786367652 586484843 554747354" />
+    <route id="rW32" edges="51812159.-60 51932979 51811895b 786367652 586484843 554747354" />
+    <route id="rW33" edges="51932979 51811895a 51812052 51812053 51812054" />
+
+    <!-- traffic to the eastern direction is ignored -->
+
+</routes>

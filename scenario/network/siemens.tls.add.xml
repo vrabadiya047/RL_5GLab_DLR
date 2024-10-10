@@ -1,0 +1,61 @@
+<tlLogics>
+    <!-- based on signal plan of the Bellis control software as of 6.9.2016 -->
+    <tlLogic id="K048" type="static" programID="fixed85" offset="0">
+
+        <!-- full cycle -->
+
+        <!-- Bellis signal ID (FZ)        22233331111133344     -->
+        <!-- Bellis signal ID (FZ)        11111112211133212     -->
+        
+        <!--    crossings                                  ESNW -->
+        <!--    from                     NEEESSSSNNNNNSSSWW     -->
+        <!--    to                       ENNSENNNSSWSSNNWSN     -->
+        <!--                             0000000000111111111122      index    Major trans dirs           BELLIS-index                    -->
+        <!--                             0123456789012345678901                                                                          -->
+        <phase duration="240"     state="grrrgGGGGGgGGGGgrrGrrG"/> <!--  0    P1          N,S            P1              default-stretch -->                  
+        <phase duration="5"       state="grrryyyyGGyyyGGgrrrrrr"/> <!--  1          P12                  PU1-2                           -->
+        <phase duration="2"       state="grrrrrrrGGrrryygrrrrrr"/> <!--  2          P12a                 PU1-2                           -->
+        <phase duration="2"       state="grrrrrrrGGrrryyGrrrrrr"/> <!--  3    P2          SW             PU1-2                           -->              
+        <phase duration="6"       state="grrrrrrrGGrrrrrGrrrrGr"/> <!--  4    P3          SW             PU2-3                           -->
+        <phase duration="5"       state="grrrrrrrGGrrrrrgrrrrGr"/> <!--  5          P34                  PU3-4                           -->
+        <phase duration="5"       state="gGGGrrrrGGrrrrrgrrrrGr"/> <!--  6    P4          E              PU3-4               stretchable -->
+        <phase duration="3"       state="gyyyrrrrGGrrrrrgrrrrrr"/> <!--  7          P45                  PU4-5                           -->
+        <phase duration="3"       state="grrrrrrrGGrrrrrgrrrrrr"/> <!--  8          P45a                 PU4-5                           -->
+        <phase duration="5"       state="GrrrrrrryyrrrrrgGrrGrr"/> <!--  9    P5          WS             PU4-5                           -->
+        <phase duration="9"       state="GrrrrrrrrrrrrGGgGGrGrr"/> <!-- 10    P6          WS,WN          PU5-6               stretchable -->
+        <phase duration="3"       state="GrrrrrrrrrrrrGGgyyrrrr"/> <!-- 11          P61                  PU6-1                           -->
+        <phase duration="4"       state="GrrrrrrrrrrrrGGgrrrrrr"/> <!-- 12          P61a                 PU6-1                           -->
+        <phase duration="7"       state="GrrrrrrrGGrrrGGgrrrrrr"/> <!-- 13          P61b                 PU6-1                           duration 10 + 2 -->
+        <phase duration="12"      state="GrrrgGGGGGgGGGGgrrrrrr"/> <!-- 14          P61c  N,S            PU6-1                           -->
+        <!-- shortcut transitions -->                                   
+        <phase duration="3"       state="grrryyyyGGyyyGGgrrrrrr"/> <!-- 15          P13                  PU1-3                           -->
+        <phase duration="2"       state="grrrrrrrGGrrrGGgrrrrrr"/> <!-- 16          P13a                 PU1-3                           -->
+        <phase duration="3"       state="grrrrrrrGGrrryygrrrrrr"/> <!-- 17          P13b                 PU1-3                           -->
+        <phase duration="6"       state="grrrrrrrGGrrrrrgrrrrrr"/> <!-- 18          P13c                 PU1-3                           duration 4 + 2 -->
+                                                                          
+        <phase duration="3"       state="grrryyyyGGyyyGGgrrrrrr"/> <!-- 19          P15                  PU1-5                           -->
+        <phase duration="5"       state="grrrrrrrGGrrrGGgrrrrrr"/> <!-- 20          P15a                 PU1-5                           -->
+        <phase duration="4"       state="grrrrrrryyrrrGGgrrrrrr"/> <!-- 21          P15b                 PU1-5                           -->
+        <phase duration="3"       state="grrrrrrrrrrrrGGgGrrrrr"/> <!-- 22          P15c  WS             PU1-5                           -->
+        <phase duration="4"       state="grrrrrrrGGrrrGGgGGrrrr"/> <!-- 23          P15d  WS,WN          PU1-5                           duration 2 + 2 -->
+                                                                          
+        <phase duration="4"       state="grrrrrrrGGrrryyGrrrrrr"/> <!-- 24          P25                  PU2-5                           -->
+        <phase duration="4"       state="grrrrrrrGGrrryygrrrrrr"/> <!-- 25          P25a                 PU2-5                           -->
+        <phase duration="2"       state="grrrrrrryyrrryygrrrrrr"/> <!-- 26          P25b                 PU2-5                           -->
+        <phase duration="3"       state="grrrrrrryyrrryygGrrrrr"/> <!-- 27          P25c  WS             PU2-5                           -->
+        <phase duration="4"       state="grrrrrrrrrrrryygGGrrrr"/> <!-- 28          P25d  WS,WN          PU2-5                           duration 2 + 2 -->
+                                                                          
+        <phase duration="3"       state="gyyyrrrrGGrrrrrgrrrrrr"/> <!-- 29          P41                  PU4-1                           -->
+        <phase duration="4"       state="grrrrrrrGGrrrrrgrrrrrr"/> <!-- 30          P41a                 PU4-1                           -->
+        <phase duration="10"      state="grrrrrrrGGrrrGGgrrrrrr"/> <!-- 31          P41b                 PU4-1                           -->
+        <phase duration="7"       state="grrrGGGGGGgGGGGgrrGrrr"/> <!-- 32          P41c  N,S            PU4-1                           duration 5 + 2 -->
+
+        <!-- extra phases that might occur -->
+        <phase duration="1"     state="grrrrrrrGGrrryyGrrrrrr"/> <!-- 33                               P2                              duration 0 + 1 -->
+        <phase duration="1"     state="grrrrrrrGGrrrrrGrrrrGr"/> <!-- 34                               P3                              duration 0 + 1 -->
+        <phase duration="10"    state="gGGGrrrrGGrrrrrgrrrrGr"/> <!-- 35                               P4                              duration 0 + 1 -->
+        <phase duration="1"     state="grrrrrrryyrrrrrgGrrGrr"/> <!-- 36                               P5                              duration 0 + 1 -->
+        <phase duration="20"    state="grrrrrrrrrrrrGGgGGrGrr"/> <!-- 37                               P6                                -->
+    </tlLogic>
+
+</tlLogics>

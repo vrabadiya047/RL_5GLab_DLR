@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <flow id="NW" begin="0.00" end="36000.000000" from="gneE2" to="51812054" probability="0.055556" departSpeed="max"/>
+  <flow id="NS" begin="0.00" end="36000.000000" from="gneE2" to="-gneE4" probability="0.166667" departSpeed="max"/>
+  <flow id="NE" begin="0.00" end="36000.000000" from="gneE2" to="-51812135" probability="0.004167" departSpeed="max"/>
+  <flow id="EN" begin="0.00" end="36000.000000" from="51812135" to="554747354" probability="0.001389" departSpeed="max"/>
+  <flow id="EW" begin="0.00" end="36000.000000" from="51812135" to="51812054" probability="0.001389" departSpeed="max"/>
+  <flow id="ES" begin="0.00" end="36000.000000" from="51812135" to="-gneE4" probability="0.001389" departSpeed="max"/>
+  <flow id="SE" begin="0.00" end="36000.000000" from="gneE4" to="-51812135" probability="0.004167" departSpeed="max"/>
+  <flow id="SN" begin="0.00" end="36000.000000" from="gneE4" to="554747354" probability="0.166667" departSpeed="max"/>
+  <flow id="SW" begin="0.00" end="36000.000000" from="gneE4" to="51812054" probability="0.055556" departSpeed="max"/>
+  <flow id="WS" begin="0.00" end="36000.000000" from="-51812054" to="-gneE4" probability="0.055556" departSpeed="max"/>
+  <flow id="WE" begin="0.00" end="36000.000000" from="-51812054" to="-51812135" probability="0.001389" departSpeed="max"/>
+  <flow id="WN" begin="0.00" end="36000.000000" from="-51812054" to="554747354" probability="0.055556" departSpeed="max"/>
+</routes>
